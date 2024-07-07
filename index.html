@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Conversor de Monedas Nacional</h1>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="caja">
+                <div class="card text-center mb-3" style="width: 20rem; height: 20rem; background-color: grey; color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Pesos CLP</h5>
+                        <input id="nuevo-monto" class="ingreso" type="number" style="width: 17rem; height: 35px; margin-bottom: 10px;text-align: center;" placeholder="Ingrese el monto en CLP">
+                        <div>
+                            <p class="card-text">Moneda a convertir:</p>
+                            <select id="moneda" style="width: 17rem; height: 35px;" >
+                            
+                            </select>
+                        </div>
+                        <br>
+                        <button class="btn btn-info text-light"  style="width: 17rem; height: 38px;" onclick="convertirMoneda()">Buscar</button>
+                        <p id="resultado" class="parrafo">...</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="grafico">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+    </main>
+    
+
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
